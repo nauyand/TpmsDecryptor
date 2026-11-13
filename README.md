@@ -3,9 +3,6 @@
 Program PC (Windows) untuk membaca data **TPMS** (*Tire Pressure Monitoring System*) dari receiver TPMS lewat port serial.
 Program menampilkan **tekanan, suhu, tegangan baterai sensor, dan status alarm** untuk **8 ban** sekaligus.
 
-> Walaupun namanya "Decryptor", program ini tidak membuka enkripsi apa pun.
-> Program hanya mengurai (*decode*) paket data biner 10 byte yang dikirim receiver TPMS.
-
 📘 **Panduan lengkap wiring dan tes di lapangan: [docs/PANDUAN.md](docs/PANDUAN.md)**
 
 ## Isi repo
