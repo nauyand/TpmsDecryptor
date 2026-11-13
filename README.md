@@ -105,34 +105,3 @@ Contoh paket berikut dibaca sebagai **Ban 1, 802 kPa (8.02 bar), 25 °C, 3.0 V, 
 55 AA 0A 01 A4 4B 00 1E 00 05
 ```
 
-## Menjalankan dari source
-
-Butuh Python 3 untuk Windows (Tkinter sudah termasuk di dalamnya) dan pyserial:
-
-```bash
-pip install pyserial
-```
-
-```bash
-python "test tpms.py"
-```
-
-## Build ulang `.exe`
-
-```bash
-pip install pyinstaller
-```
-
-```bash
-pyinstaller "test tpms.spec"
-```
-
-File hasil build ada di `dist/test tpms.exe`.
-
-## Keterbatasan yang diketahui
-
-- Program membaca per 10 byte tanpa mencari header `55 AA`. Kalau tersambung di tengah paket, data bisa bergeser.
-  Solusinya: klik **Disconnect**, tunggu sebentar, lalu **Connect** lagi.
-- Paket yang gagal (header salah atau checksum salah) tidak ditampilkan sebagai pesan error. Paket itu hanya terlihat di RAW SERIAL, dan kotak ban tidak berubah.
-- Hanya posisi ban `01`–`08` yang ditampilkan.
-- Rumus tekanan, suhu, dan baterai mengikuti kode program dan sebaiknya dicocokkan dengan alat ukur.
