@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="DejaVu Sans, Segoe UI, Arial, sans-serif">
+  <rect width="900" height="400" fill="#ffffff"/>
+  <text x="30" y="42" font-size="22" font-weight="bold" fill="#1a1a1a">Tes TPMS dengan USB-RS232 ke PC</text>
+
+  <!-- Receiver TPMS -->
+  <rect x="30" y="80" width="230" height="230" rx="10" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="145" y="112" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Receiver TPMS</text>
+  <text x="145" y="134" font-size="13" text-anchor="middle" fill="#666">(kabel serial TPMS)</text>
+  <text x="240" y="155" font-size="17" font-weight="bold" text-anchor="end" fill="#e26e00">TX</text>
+  <text x="240" y="205" font-size="17" font-weight="bold" text-anchor="end" fill="#888">RX</text>
+  <text x="240" y="255" font-size="17" font-weight="bold" text-anchor="end" fill="#006ecd">GND</text>
+
+  <!-- Adaptor USB-RS232 -->
+  <rect x="420" y="80" width="230" height="230" rx="10" fill="#e8f0fb" stroke="#2b5fa8" stroke-width="2"/>
+  <text x="535" y="112" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Adaptor</text>
+  <text x="535" y="134" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">USB-RS232</text>
+  <text x="440" y="155" font-size="17" font-weight="bold" fill="#e26e00">RXD</text>
+  <text x="440" y="205" font-size="17" font-weight="bold" fill="#888">TXD</text>
+  <text x="440" y="255" font-size="17" font-weight="bold" fill="#006ecd">GND</text>
+
+  <!-- kabel -->
+  <line x1="260" y1="150" x2="420" y2="150" stroke="#e26e00" stroke-width="5"/>
+  <text x="340" y="140" font-size="14" text-anchor="middle" fill="#e26e00">data TPMS</text>
+  <line x1="260" y1="200" x2="420" y2="200" stroke="#aaa" stroke-width="3" stroke-dasharray="8 7"/>
+  <text x="340" y="190" font-size="14" text-anchor="middle" fill="#888">tidak perlu</text>
+  <line x1="260" y1="250" x2="420" y2="250" stroke="#006ecd" stroke-width="5"/>
+  <text x="340" y="240" font-size="14" text-anchor="middle" fill="#006ecd">ground</text>
+  <circle cx="260" cy="150" r="6" fill="#e26e00"/><circle cx="420" cy="150" r="6" fill="#e26e00"/>
+  <circle cx="260" cy="200" r="5" fill="#aaa"/><circle cx="420" cy="200" r="5" fill="#aaa"/>
+  <circle cx="260" cy="250" r="6" fill="#006ecd"/><circle cx="420" cy="250" r="6" fill="#006ecd"/>
+
+  <!-- USB ke PC -->
+  <line x1="650" y1="195" x2="730" y2="195" stroke="#333" stroke-width="4"/>
+  <text x="690" y="185" font-size="14" text-anchor="middle" fill="#333">USB</text>
+  <rect x="730" y="125" width="145" height="140" rx="10" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="802" y="160" font-size="17" font-weight="bold" text-anchor="middle" fill="#1a1a1a">PC / Laptop</text>
+  <text x="802" y="190" font-size="14" text-anchor="middle" fill="#333">test tpms.exe</text>
+  <text x="802" y="215" font-size="14" text-anchor="middle" fill="#333">pilih COM</text>
+  <text x="802" y="240" font-size="14" text-anchor="middle" fill="#333">baud 19200</text>
+
+  <text x="30" y="350" font-size="15" fill="#333">Wajib: TX TPMS ke RXD adaptor, dan GND ke GND.</text>
+  <text x="30" y="375" font-size="15" fill="#333">Pakai terminal RS232 di adaptor, bukan TTL atau RS485 (A/B). Setelan: 19200 baud, 8N1.</text>
+</svg>
